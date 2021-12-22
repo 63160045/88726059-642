@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<div style="width: 500px ;height: 550px;border: 3px solid #000000;background-color:#ffffff">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form demo</title>
+    </head>
+<body>
+    <h3>Hotel Booking</h3>
+    <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
+    <label for="name">Room Type</label>
+    <select name="roomtype">
+        <option value="0">Please Select</option>
+        <option value="1">Standard</option>
+        <option value="2">Luxury</option>
+        <option value="3">Deluxe</option>
+    </select>
+<br><br>
+    <label for="name">Number of Guests</label>
+    <select name="numguest">
+        <option value="0">Please Select</option>
+        <option value="1">1-2</option>
+        <option value="2">3-4</option>
+        <option value="3">5-6</option>
+        <option value="4">7-8</option>
+    </select>
+<br><br>
+    <label for="name">Name</label><td> &nbsp;&nbsp;</td>
+    <input type="text" name="fame" id="fame" placeholder="First"> &nbsp;&nbsp; <input type="text" name="lname" id="lname" placeholder="Last">
+<br><br>
+    <td><label for="mail">E-mail</label></td><td> &nbsp;&nbsp;</td>
+    <input type="email" id="email" name="email" placeholder="oat@example.com">
+<br><br>
+    <td><label for="arrive">Arrival</label></td><td> &nbsp;&nbsp;</td>
+    <input type="date" name="arrivaldate" max="3500-12-31"> &nbsp;&nbsp; 
+    <input type="time" name="arrivaltime">
+<br><br>
+    <td><label for="depart">Departure</label></td><td> &nbsp;&nbsp;</td>
+    <input type="date" name="departuredate" max="3500-12-31"> &nbsp;&nbsp; 
+    <input type="time" name="departuretime">
+<br><br>
+    <td><label for="pick">Free Pickup</label></td><td> &nbsp;&nbsp;&nbsp;</td>
+    <input type="radio" name="pickup" id="" value="Yes">= Yes, Sure!
+<br> <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</td>
+    <input type="radio" name="pickup" id="" value="No">= No, I already rented a car.
+<br><br>
+    <label for="flight">Flight Number</label></td><td> &nbsp;&nbsp;</td>
+    <input type="text" name="flightnum" id="flightnum" placeholder="C123">
+<br><br>
+    <label for="other">Other requests</label></td><td> &nbsp;&nbsp;</td>
+    <Textarea name="otherreq" id="otherreq" rows="5" cols="50"></Textarea>
+<br><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear">
+    </form>
+</body>
+</div>
+</html>
